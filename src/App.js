@@ -39,12 +39,17 @@ function App() {
 
       <hr /><h2>Tehtävä 2.11</h2>
       <ul>
-        {[...data].map(p => Object.values(p) % 2 === 0 ? <li key={Object.keys(p)}><pre>{Object.keys(p)} {Object.values(p)}</pre></li> : null)}
+        {[...data].map(p =>
+          Object.values(p) % 2 ? null :
+            <li key={Object.keys(p)}>
+              <pre>{Object.keys(p)} {Object.values(p)}</pre>
+            </li>)}
       </ul>
 
       <hr /><h2>Tehtävä 2.12</h2>
       <ul>
-        {[...data].map(p => Object.keys(p).toString().split('')[1] === "e" ? <li key={Object.keys(p)}><pre>{Object.keys(p)} {Object.values(p)}</pre></li> : null)}
+        {[...data].map(p => Object.keys(p)
+          .toString()[1] === "e" ? <li key={Object.keys(p)}><pre>{Object.keys(p)} {Object.values(p)}</pre></li> : null)}
       </ul>
 
       <hr /><h2>Tehtävä 2.13</h2>
