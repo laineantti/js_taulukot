@@ -26,7 +26,7 @@ function App() {
       <hr /><h2>Tehtävä 2.9</h2>
       <ul>
         {[...data].sort((a, b) => Object.values(a) - Object.values(b))
-          .map(p => <li key={Object.keys(p)}><pre>{Object.keys(p)}  {Object.values(p)}</pre></li>)}
+          .map(p => <li key={Object.keys(p)}><pre>{Object.keys(p)} {Object.values(p)}</pre></li>)}
       </ul>
 
       <hr /><h2>Tehtävä 2.10</h2>
@@ -39,12 +39,12 @@ function App() {
 
       <hr /><h2>Tehtävä 2.11</h2>
       <ul>
-        {[...data].map(p => Object.values(p) % 2 === 0 ? <li key={Object.keys(p)}><pre>{Object.keys(p)}  {Object.values(p)}</pre></li> : null)}
+        {[...data].map(p => Object.values(p) % 2 === 0 ? <li key={Object.keys(p)}><pre>{Object.keys(p)} {Object.values(p)}</pre></li> : null)}
       </ul>
 
       <hr /><h2>Tehtävä 2.12</h2>
       <ul>
-        {[...data].map(p => Object.keys(p).toString().split('')[1] === "e" ? <li key={Object.keys(p)}><pre>{Object.keys(p)}  {Object.values(p)}</pre></li> : null)}
+        {[...data].map(p => Object.keys(p).toString().split('')[1] === "e" ? <li key={Object.keys(p)}><pre>{Object.keys(p)} {Object.values(p)}</pre></li> : null)}
       </ul>
 
       <hr /><h2>Tehtävä 2.13</h2>
